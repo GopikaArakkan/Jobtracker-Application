@@ -23,7 +23,13 @@ const app = express();
 connectDB();    //2.
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",   // for local dev (Vite)
+    "https://your-frontend-name.onrender.com"  // 👈 replace later after deploy
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use("/api/auth", authRoutes); //4.
 app.use("/api/jobs", jobRoutes); //7.
