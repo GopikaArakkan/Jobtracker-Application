@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+body {
+  background: #0f172a;
+}
+
+.react-calendar {
+  color: black !important;
+}
+
+.react-calendar__month-view__days__day {
+  color: black !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: red !important;
+}
