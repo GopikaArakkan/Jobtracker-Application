@@ -26,7 +26,7 @@ connectDB();    //2.
 app.use(cors({
   origin: [
     "http://localhost:5173",   // for local dev (Vite)
-    "https://your-frontend-name.onrender.com"  // 👈 replace later after deploy
+    "https://jobtracker-frontend-kebv.onrender.com"  // 👈 replace later after deploy
   ],
   credentials: true
 }));
